@@ -1,0 +1,32 @@
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fade 10s infinite;
+  }
+  
+  .image-container img:first-child {
+    opacity: 1;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
